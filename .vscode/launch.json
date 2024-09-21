@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(lldb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/ofGenMesh.app/Contents/MacOS/ofGenMesh",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for lldb",
+          "text": "settings set target.inline-breakpoint-strict-match false",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build openFrameworks"
+    }
+  ]
+}
